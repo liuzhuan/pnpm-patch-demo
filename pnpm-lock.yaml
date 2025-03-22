@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  is-even@1.0.0:
+    hash: caf510641eaef236d3d374a7ce7f2bd576f28ced1c42e3c871239dc3f5b374d8
+    path: patches/is-even@1.0.0.patch
+
 importers:
 
   .:
     dependencies:
       is-even:
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.0.0(patch_hash=caf510641eaef236d3d374a7ce7f2bd576f28ced1c42e3c871239dc3f5b374d8)
 
 packages:
 
@@ -37,7 +42,7 @@ snapshots:
 
   is-buffer@1.1.6: {}
 
-  is-even@1.0.0:
+  is-even@1.0.0(patch_hash=caf510641eaef236d3d374a7ce7f2bd576f28ced1c42e3c871239dc3f5b374d8):
     dependencies:
       is-odd: 0.1.2
 

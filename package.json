@@ -11,5 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "is-even": "^1.0.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "is-even@1.0.0": "patches/is-even@1.0.0.patch"
+    }
   }
 }
